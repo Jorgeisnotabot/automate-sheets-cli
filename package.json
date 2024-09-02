@@ -7,12 +7,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "link-cli": "pnpm unlink -g automate-sheets-cli && pnpm link -g",
     "dev": "tsc -w"
   },
   "keywords": [],
   "author": "Jorge Dominguez",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^22.5.2",
     "typescript": "^5.5.4"
   },
   "dependencies": {
