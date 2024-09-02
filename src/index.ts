@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 
-const hello = (message: string) => {
-    
-};
+import { Command } from 'commander';
 
-console.log('woooohooo!');
+const program = new Command();
+
+program.action(() => {
+    console.log('Hello, world!!');
+}).description('Prints "Hello, world!!"');
+
+program.parse(process.argv);
